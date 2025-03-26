@@ -3,11 +3,32 @@ import { Link } from 'react-router-dom';
 import PageTransition from '@/components/ui/PageTransition';
 import HeroSection from '@/components/sections/HeroSection';
 import AnimatedCard from '@/components/ui/AnimatedCard';
-import { BarChart3, Globe, Settings, BarChart2, ArrowRight } from 'lucide-react';
+import { BarChart3, Globe, Settings, BarChart2, ArrowRight, MapPin } from 'lucide-react';
 
 const Index = () => {
   return (
     <PageTransition>
+      {/* Location Banner */}
+      <div className="bg-dacta-blue text-white py-2 px-4 text-center text-sm font-medium flex items-center justify-center">
+        <MapPin className="h-4 w-4 mr-2" />
+        <span>Data Focus Agency Based in Victoria, Australia</span>
+      </div>
+      
+      {/* Logo and Tagline Section */}
+      <section className="relative pt-16 pb-8 flex flex-col items-center">
+        <div className="flex flex-col items-center">
+          <img 
+            src="/lovable-uploads/43f5ed4a-a45c-4f54-a75e-9356e2c46537.png" 
+            alt="DACTA Creative Logo" 
+            className="h-32 mb-4"
+          />
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-dacta-blue mb-1">DACTA Creative</h1>
+            <p className="text-lg text-dacta-neon-blue font-medium">All Things Data</p>
+          </div>
+        </div>
+      </section>
+      
       <HeroSection
         title="Welcome to DACTA Creative – Transforming Data into Actionable Insights"
         subtitle="At DACTA Creative, we specialize in empowering organizations by harnessing the power of data. Our expertise spans dashboard creation, GIS mapping, business process automation, and comprehensive Monitoring, Evaluation & Learning (MEL) solutions."

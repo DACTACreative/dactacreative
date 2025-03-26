@@ -50,10 +50,18 @@ const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           <Link 
             to="/" 
-            className="flex items-center font-medium text-xl"
+            className="flex items-center"
           >
-            <span className="text-gradient font-semibold">DACTA</span>
-            <span className="ml-1 text-dacta-blue">Creative</span>
+            <img 
+              src="/lovable-uploads/43f5ed4a-a45c-4f54-a75e-9356e2c46537.png" 
+              alt="DACTA Creative Logo" 
+              className="h-8 mr-2" 
+            />
+            <div>
+              <span className="font-semibold text-dacta-blue">DACTA</span>
+              <span className="ml-1 text-dacta-blue">Creative</span>
+              <span className="text-xs block text-dacta-neon-blue">All Things Data</span>
+            </div>
           </Link>
           
           {/* Desktop Navigation */}
