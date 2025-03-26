@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PageTransition from '@/components/ui/PageTransition';
 import HeroSection from '@/components/sections/HeroSection';
 import AnimatedCard from '@/components/ui/AnimatedCard';
-import { BarChart3, Globe, Settings, BarChart2 } from 'lucide-react';
+import { BarChart3, Globe, Settings, BarChart2, ArrowRight } from 'lucide-react';
 
 const Index = () => {
   return (
