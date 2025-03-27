@@ -26,8 +26,8 @@ const AnimatedCard = ({
       style={{ animationDelay: delay }}
     >
       <div className="flex items-center mb-4">
-        {icon && <div className="mr-3 text-dacta-neon-blue">{icon}</div>}
-        <h3 className="text-xl font-medium text-dacta-blue">{title}</h3>
+        {icon && <div className="mr-3 text-dacta-accent">{icon}</div>}
+        <h3 className="text-xl font-medium text-gray-900">{title}</h3>
       </div>
       <div className="text-gray-600">{children}</div>
     </div>

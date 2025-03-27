@@ -68,6 +68,7 @@ export default {
 					'neon-blue': '#00b4d8',
 					'light-blue': '#e6f2ff',
 					'off-white': '#f8f9fa',
+					'accent': '#33c3f0',  // Modern, trustworthy teal/blue color
 				}
 			},
 			borderRadius: {

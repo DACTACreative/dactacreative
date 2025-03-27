@@ -9,14 +9,13 @@ const Index = () => {
   return (
     <PageTransition>
       <HeroSection
-        title="Welcome to DACTA Creative – Transforming Data into Actionable Insights"
-        subtitle="At DACTA Creative, we specialize in empowering organizations by harnessing the power of data. Our expertise spans dashboard creation, GIS mapping, business process automation, and comprehensive Monitoring, Evaluation & Learning (MEL) solutions."
+        subtitle="We specialize in empowering organizations by harnessing the power of data. Our expertise spans dashboard creation, GIS mapping, business process automation, and comprehensive Monitoring, Evaluation & Learning (MEL) solutions."
       />
       
       <section className="section-padding bg-white">
         <div className="page-container">
           <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="text-dacta-blue mb-6 animate-fade-in">Our Mission</h2>
+            <h2 className="text-gray-900 mb-6 animate-fade-in">Our Mission</h2>
             <p className="text-lg text-gray-600 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               We are committed to delivering innovative, user-centric solutions that drive informed decision-making and operational excellence.
             </p>
@@ -31,7 +30,7 @@ const Index = () => {
               <p className="mb-4">Designing intuitive dashboards for real-time business insights.</p>
               <Link
                 to="/dashboards"
-                className="text-dacta-neon-blue hover:text-dacta-blue inline-flex items-center font-medium"
+                className="text-dacta-accent hover:text-gray-900 inline-flex items-center font-medium"
               >
                 Learn more <ArrowIcon className="ml-1 w-4 h-4" />
               </Link>
@@ -45,7 +44,7 @@ const Index = () => {
               <p className="mb-4">Leveraging spatial data for strategic planning and analysis.</p>
               <Link
                 to="/gis-mapping"
-                className="text-dacta-neon-blue hover:text-dacta-blue inline-flex items-center font-medium"
+                className="text-dacta-accent hover:text-gray-900 inline-flex items-center font-medium"
               >
                 Learn more <ArrowIcon className="ml-1 w-4 h-4" />
               </Link>
@@ -59,7 +58,7 @@ const Index = () => {
               <p className="mb-4">Streamlining operations through intelligent automation.</p>
               <Link
                 to="/automation"
-                className="text-dacta-neon-blue hover:text-dacta-blue inline-flex items-center font-medium"
+                className="text-dacta-accent hover:text-gray-900 inline-flex items-center font-medium"
               >
                 Learn more <ArrowIcon className="ml-1 w-4 h-4" />
               </Link>
@@ -73,7 +72,7 @@ const Index = () => {
               <p className="mb-4">Comprehensive support for project assessment and improvement.</p>
               <Link
                 to="/mel-solutions"
-                className="text-dacta-neon-blue hover:text-dacta-blue inline-flex items-center font-medium"
+                className="text-dacta-accent hover:text-gray-900 inline-flex items-center font-medium"
               >
                 Learn more <ArrowIcon className="ml-1 w-4 h-4" />
               </Link>
@@ -82,29 +81,29 @@ const Index = () => {
         </div>
       </section>
       
-      <section className="section-padding bg-gradient-to-b from-white to-dacta-light-blue/30">
+      <section className="section-padding bg-gradient-to-b from-white to-dacta-accent/5">
         <div className="page-container">
           <div className="text-center mb-12">
-            <h2 className="text-dacta-blue mb-6 animate-fade-in">Why Choose DACTA Creative?</h2>
+            <h2 className="text-gray-900 mb-6 animate-fade-in">Why Choose DACTA Creative?</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="subtle-card p-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              <h3 className="text-xl font-medium text-dacta-blue mb-3">Data Expertise</h3>
+              <h3 className="text-xl font-medium text-gray-900 mb-3">Data Expertise</h3>
               <p className="text-gray-600">
                 We transform complex data into clear, actionable insights through carefully crafted visualizations and analytics.
               </p>
             </div>
             
             <div className="subtle-card p-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <h3 className="text-xl font-medium text-dacta-blue mb-3">Client-Centered Approach</h3>
+              <h3 className="text-xl font-medium text-gray-900 mb-3">Client-Centered Approach</h3>
               <p className="text-gray-600">
                 Every solution is tailored to your specific needs, ensuring maximum relevance and impact for your organization.
               </p>
             </div>
             
             <div className="subtle-card p-6 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-              <h3 className="text-xl font-medium text-dacta-blue mb-3">Innovative Solutions</h3>
+              <h3 className="text-xl font-medium text-gray-900 mb-3">Innovative Solutions</h3>
               <p className="text-gray-600">
                 We combine technical expertise with creative problem-solving to deliver cutting-edge data solutions.
               </p>
@@ -113,16 +112,16 @@ const Index = () => {
         </div>
       </section>
       
-      <section className="section-padding bg-dacta-blue text-white">
+      <section className="section-padding bg-gray-900 text-white">
         <div className="page-container">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="mb-8 animate-fade-in">Ready to Transform Your Data?</h2>
-            <p className="text-dacta-light-blue mb-8 text-lg animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="text-dacta-accent mb-8 text-lg animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Discover how DACTA Creative can help your organization leverage data for better decision-making and improved outcomes.
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center px-6 py-3 rounded-full bg-white text-dacta-blue hover:bg-dacta-neon-blue hover:text-white transition-colors duration-300 shadow-sm hover:shadow-md animate-fade-in"
+              className="inline-flex items-center px-6 py-3 rounded-full bg-white text-gray-900 hover:bg-dacta-accent hover:text-white transition-colors duration-300 shadow-sm hover:shadow-md animate-fade-in"
               style={{ animationDelay: '0.3s' }}
             >
               Get in Touch
