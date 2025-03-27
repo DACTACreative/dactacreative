@@ -112,16 +112,16 @@ const Index = () => {
         </div>
       </section>
       
-      <section className="section-padding bg-gray-900 text-white">
+      <section className="section-padding bg-dacta-accent text-white">
         <div className="page-container">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="mb-8 animate-fade-in">Ready to Transform Your Data?</h2>
-            <p className="text-dacta-accent mb-8 text-lg animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="text-white mb-8 text-lg animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Discover how DACTA Creative can help your organization leverage data for better decision-making and improved outcomes.
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center px-6 py-3 rounded-full bg-white text-gray-900 hover:bg-dacta-accent hover:text-white transition-colors duration-300 shadow-sm hover:shadow-md animate-fade-in"
+              className="inline-flex items-center px-6 py-3 rounded-full bg-white text-dacta-accent hover:bg-white/90 hover:text-dacta-accent transition-colors duration-300 shadow-sm hover:shadow-md animate-fade-in"
               style={{ animationDelay: '0.3s' }}
             >
               Get in Touch
