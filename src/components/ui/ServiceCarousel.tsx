@@ -6,7 +6,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious
-} from '@/components/ui/carousel'; // Note: lowercase 'carousel' to match the actual file
+} from '@/components/ui/carousel';
 import { cn } from '@/lib/utils';
 
 interface ServiceCarouselProps {

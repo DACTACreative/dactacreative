@@ -25,7 +25,7 @@
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 199 93% 56%;  /* #33C3F0 - Bright teal/blue */
+    --accent: 133 36% 27%;  /* #2D5D34 - Deep fern green */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -88,7 +88,7 @@
   }
   
   .neon-border {
-    @apply border border-dacta-accent/50 shadow-[0_0_15px_rgba(51,195,240,0.3)];
+    @apply border border-dacta-accent/50 shadow-[0_0_15px_rgba(45,93,52,0.3)];
   }
   
   .section-padding {
