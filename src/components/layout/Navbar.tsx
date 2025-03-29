@@ -60,7 +60,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/bed38281-a2e5-4a2c-b9b9-13c3aa6a561e.png" 
               alt="DACTA Creative Logo" 
-              className="h-10 mr-3"
+              className="h-12 mr-3"
             />
             <div className="flex flex-col justify-center">
               <span className="text-xl font-semibold text-gray-900">DACTA Creative</span>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 className={cn(
                   'px-3 py-2 text-sm rounded-md font-medium transition-colors duration-200',
                   location.pathname === link.path
-                    ? 'text-dacta-accent'
+                    ? 'text-dacta-accent bg-dacta-accent/10'
                     : 'text-gray-700 hover:text-dacta-accent hover:bg-dacta-accent/10'
                 )}
               >
