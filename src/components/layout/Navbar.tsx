@@ -82,7 +82,7 @@ const Navbar = () => {
                   'px-3 py-2 rounded-md font-medium transition-colors duration-200',
                   scrolled ? 'text-base' : 'text-lg',
                   location.pathname === link.path
-                    ? 'text-dacta-accent'
+                    ? 'text-dacta-accent bg-dacta-accent/10'
                     : 'text-gray-700 hover:text-dacta-accent hover:bg-dacta-accent/10'
                 )}
               >
