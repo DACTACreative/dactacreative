@@ -88,27 +88,38 @@ const Automation = () => {
             
             <ServiceCarousel animationDelay="0.3s">
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Zapier" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/zapier-new.png" 
+                  alt="Zapier" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Zapier</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Microsoft Power Automate" className="h-16 w-auto mb-4" />
-                <h3 className="text-lg font-medium text-dacta-blue">Microsoft Power Automate</h3>
+                <img 
+                  src="/tool-logos/make-official.svg" 
+                  alt="Make" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
+                <h3 className="text-lg font-medium text-dacta-blue">Make</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Integromat (Make)" className="h-16 w-auto mb-4" />
-                <h3 className="text-lg font-medium text-dacta-blue">Integromat (Make)</h3>
+                <img 
+                  src="/tool-logos/n8n.png" 
+                  alt="N8N" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
+                <h3 className="text-lg font-medium text-dacta-blue">N8N</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Airtable" className="h-16 w-auto mb-4" />
-                <h3 className="text-lg font-medium text-dacta-blue">Airtable</h3>
-              </ServiceCarouselItem>
-              
-              <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Notion" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/notion.svg" 
+                  alt="Notion" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Notion</h3>
               </ServiceCarouselItem>
             </ServiceCarousel>

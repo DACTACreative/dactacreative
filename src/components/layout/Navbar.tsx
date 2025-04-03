@@ -3,15 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
-
-const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'Dashboards & Analytics', path: '/dashboards' },
-  { name: 'GIS Mapping', path: '/gis-mapping' },
-  { name: 'Automation', path: '/automation' },
-  { name: 'MEL Solutions', path: '/mel-solutions' },
-  { name: 'Contact', path: '/contact' }
-];
+import { websiteContent } from '../../content';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,17 +34,20 @@ const Navbar = () => {
       className={cn(
         'fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out',
         scrolled 
-          ? 'bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-100' 
-          : 'bg-transparent'
+          ? 'bg-white/90 backdrop-blur-lg shadow-sm border-b border-gray-100' 
+          : 'bg-white/50 backdrop-blur-sm'
       )}
     >
       {/* Location banner */}
-      <div className="bg-dacta-accent text-white text-center py-1 text-xs md:text-sm">
-        Data Focus Agency Based in Victoria, Australia
+      <div className="bg-dacta-accent text-white text-center py-1.5 text-sm">
+        {websiteContent.locationBanner}
       </div>
       
       <div className="page-container">
-        <div className="flex h-16 items-center justify-between">
+        <div className={cn(
+          'flex items-center justify-between transition-all duration-300',
+          scrolled ? 'h-16' : 'h-20'
+        )}>
           <Link 
             to="/" 
             className="flex items-center"
@@ -60,22 +55,32 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/bed38281-a2e5-4a2c-b9b9-13c3aa6a561e.png" 
               alt="DACTA Creative Logo" 
-              className="h-10 mr-3"
+              className={cn(
+                'transition-all duration-300',
+                scrolled ? 'h-8 md:h-10' : 'h-10 md:h-12'
+              )}
             />
-            <div className="flex flex-col justify-center">
-              <span className="text-xl font-semibold text-gray-900">DACTA Creative</span>
-              <span className="text-sm text-dacta-accent font-medium">ALL THINGS DATA</span>
+            <div className="flex flex-col justify-center ml-3">
+              <span className={cn(
+                'font-semibold text-gray-900 transition-all duration-300 leading-tight',
+                scrolled ? 'text-lg md:text-xl' : 'text-xl md:text-2xl'
+              )}>{websiteContent.companyName}</span>
+              <span className={cn(
+                'text-dacta-accent font-medium transition-all duration-300',
+                scrolled ? 'text-sm md:text-base' : 'text-base md:text-lg'
+              )}>{websiteContent.companyTagline}</span>
             </div>
           </Link>
-          
+
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
-            {navLinks.map((link) => (
+          <nav className="hidden md:flex items-center space-x-1.5">
+            {websiteContent.navigation.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 className={cn(
-                  'px-3 py-2 text-sm rounded-md font-medium transition-colors duration-200',
+                  'px-3 py-2 rounded-md font-medium transition-colors duration-200',
+                  scrolled ? 'text-base' : 'text-lg',
                   location.pathname === link.path
                     ? 'text-dacta-accent'
                     : 'text-gray-700 hover:text-dacta-accent hover:bg-dacta-accent/10'
@@ -89,7 +94,7 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-dacta-accent hover:bg-dacta-accent/10"
+            className="md:hidden p-3 rounded-md text-gray-700 hover:text-dacta-accent hover:bg-dacta-accent/10 absolute left-4"
             aria-label="Toggle menu"
           >
             {isOpen ? (
@@ -110,7 +115,7 @@ const Navbar = () => {
         style={{ top: '64px' }}
       >
         <nav className="flex flex-col space-y-1 p-4">
-          {navLinks.map((link) => (
+          {websiteContent.navigation.map((link) => (
             <Link
               key={link.path}
               to={link.path}

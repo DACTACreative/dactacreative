@@ -88,27 +88,38 @@ const GISMapping = () => {
             
             <ServiceCarousel animationDelay="0.3s">
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="ArcGIS Pro (Esri)" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/arcgis.png" 
+                  alt="ArcGIS Pro (Esri)" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">ArcGIS Pro (Esri)</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="QGIS" className="h-16 w-auto mb-4" />
-                <h3 className="text-lg font-medium text-dacta-blue">QGIS</h3>
-              </ServiceCarouselItem>
-              
-              <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Google Earth Engine" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/gee.png" 
+                  alt="Google Earth Engine" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Google Earth Engine</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Mapbox" className="h-16 w-auto mb-4" />
-                <h3 className="text-lg font-medium text-dacta-blue">Mapbox</h3>
+                <img 
+                  src="/tool-logos/postgis-logo.png" 
+                  alt="PostGIS" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
+                <h3 className="text-lg font-medium text-dacta-blue">PostGIS</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="GeoServer" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/geoserver.png" 
+                  alt="GeoServer" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">GeoServer</h3>
               </ServiceCarouselItem>
             </ServiceCarousel>
@@ -121,8 +132,12 @@ const GISMapping = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-dacta-blue mb-8 animate-fade-in">GIS Project Example</h2>
             
-            <div className="aspect-video bg-gray-100 rounded-xl mb-8 flex items-center justify-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <p className="text-gray-500">GIS project example will be displayed here</p>
+            <div className="aspect-video bg-gray-100 rounded-xl mb-8 overflow-hidden animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <img 
+                src="/examples/gis-heatmap.png" 
+                alt="Transport Accessibility Heat Map Example" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

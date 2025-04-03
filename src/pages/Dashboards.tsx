@@ -88,27 +88,47 @@ const Dashboards = () => {
             
             <ServiceCarousel animationDelay="0.3s">
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Microsoft Power BI" className="h-16 w-auto mb-4" />
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" 
+                  alt="Microsoft Power BI" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Microsoft Power BI</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Tableau" className="h-16 w-auto mb-4" />
+                <img 
+                  src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Symbol.png" 
+                  alt="Tableau" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Tableau</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Looker Studio" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/looker-studio.svg" 
+                  alt="Looker Studio" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Looker Studio</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Domo" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/domo.png" 
+                  alt="Domo" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Domo</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="QlikView" className="h-16 w-auto mb-4" />
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/32/Qlik_Logo.svg" 
+                  alt="QlikView" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">QlikView</h3>
               </ServiceCarouselItem>
             </ServiceCarousel>

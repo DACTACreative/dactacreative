@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import { websiteContent } from '../content';
 
 const ContactPage = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -147,8 +148,8 @@ const ContactPage = () => {
                     <Mail className="h-6 w-6 text-dacta-neon-blue mr-4 mt-1" />
                     <div>
                       <h3 className="font-medium text-dacta-blue mb-1">Email Us</h3>
-                      <a href="mailto:info@dactacreative.com.au" className="text-gray-600 hover:text-dacta-neon-blue transition-colors">
-                        info@dactacreative.com.au
+                      <a href={`mailto:${websiteContent.contact.email}`} className="text-gray-600 hover:text-dacta-neon-blue transition-colors">
+                        {websiteContent.contact.email}
                       </a>
                     </div>
                   </div>
@@ -157,8 +158,8 @@ const ContactPage = () => {
                     <Phone className="h-6 w-6 text-dacta-neon-blue mr-4 mt-1" />
                     <div>
                       <h3 className="font-medium text-dacta-blue mb-1">Call Us</h3>
-                      <a href="tel:+61000000000" className="text-gray-600 hover:text-dacta-neon-blue transition-colors">
-                        +61 0 0000 0000
+                      <a href={`tel:${websiteContent.contact.phone}`} className="text-gray-600 hover:text-dacta-neon-blue transition-colors">
+                        {websiteContent.contact.phone}
                       </a>
                     </div>
                   </div>
@@ -168,7 +169,7 @@ const ContactPage = () => {
                     <div>
                       <h3 className="font-medium text-dacta-blue mb-1">Our Location</h3>
                       <p className="text-gray-600">
-                        Victoria, Australia
+                        {websiteContent.contact.address}
                       </p>
                     </div>
                   </div>
@@ -177,8 +178,8 @@ const ContactPage = () => {
                 <div className="mt-8 pt-8 border-t border-gray-100">
                   <h3 className="font-medium text-dacta-blue mb-4">Business Hours</h3>
                   <div className="space-y-1 text-gray-600">
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM AEST</p>
-                    <p>Saturday - Sunday: Closed</p>
+                    <p>Monday - Friday: {websiteContent.contact.businessHours.weekdays}</p>
+                    <p>Saturday - Sunday: {websiteContent.contact.businessHours.weekend}</p>
                   </div>
                 </div>
               </div>
