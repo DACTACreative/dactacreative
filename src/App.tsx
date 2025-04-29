@@ -4,8 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
+import Layout from "./components/layout/Layout";
 import Index from "./pages/Index";
 import Dashboards from "./pages/Dashboards";
 import GISMapping from "./pages/GISMapping";
@@ -22,17 +21,17 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/dashboards" element={<Dashboards />} />
-          <Route path="/gis-mapping" element={<GISMapping />} />
-          <Route path="/automation" element={<Automation />} />
-          <Route path="/mel-solutions" element={<MELSolutions />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/dashboards" element={<Dashboards />} />
+            <Route path="/gis-mapping" element={<GISMapping />} />
+            <Route path="/automation" element={<Automation />} />
+            <Route path="/mel-solutions" element={<MELSolutions />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

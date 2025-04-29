@@ -108,42 +108,74 @@ const MELSolutions = () => {
             
             <ServiceCarousel animationDelay="0.3s">
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="KoboToolbox" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/kobotoolbox.png" 
+                  alt="KoboToolbox" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">KoboToolbox</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="SurveyCTO" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/surveycto.png" 
+                  alt="SurveyCTO" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">SurveyCTO</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Qualtrics" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/qualtrics.svg" 
+                  alt="Qualtrics" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Qualtrics</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Tableau" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/tableau.png" 
+                  alt="Tableau" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Tableau</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Power BI" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/powerbi.png" 
+                  alt="Power BI" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Power BI</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Looker Studio" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/looker-studio.png" 
+                  alt="Looker Studio" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Looker Studio</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="Airtable" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/airtable-new.png" 
+                  alt="Airtable" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">Airtable</h3>
               </ServiceCarouselItem>
               
               <ServiceCarouselItem>
-                <img src="/placeholder.svg" alt="SQL Databases" className="h-16 w-auto mb-4" />
+                <img 
+                  src="/tool-logos/sql.png" 
+                  alt="SQL Databases" 
+                  className="h-16 w-auto mb-4 object-contain" 
+                />
                 <h3 className="text-lg font-medium text-dacta-blue">SQL Databases</h3>
               </ServiceCarouselItem>
             </ServiceCarousel>

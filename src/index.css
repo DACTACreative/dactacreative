@@ -25,8 +25,8 @@
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 133 36% 27%;  /* #2D5D34 - Deep fern green */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
@@ -66,7 +66,7 @@
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
+    @apply text-4xl sm:text-5xl md:text-6xl font-bold;
   }
 
   h2 {
@@ -88,7 +88,7 @@
   }
   
   .neon-border {
-    @apply border border-dacta-neon-blue/50 shadow-[0_0_15px_rgba(0,180,216,0.3)];
+    @apply border border-dacta-accent/50 shadow-[0_0_15px_rgba(45,93,52,0.3)];
   }
   
   .section-padding {
@@ -101,7 +101,7 @@
   
   .subtle-card {
     @apply bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100 
-           transition duration-300 hover:shadow-md hover:border-dacta-light-blue;
+           transition duration-300 hover:shadow-md hover:border-dacta-accent/30;
   }
   
   .hover-card {
@@ -109,7 +109,7 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-dacta-blue to-dacta-neon-blue bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent;
   }
 }
 
